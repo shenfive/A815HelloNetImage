@@ -9,14 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var contaner: UIView!
     @IBOutlet weak var theImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        theImageView.clipsToBounds = true
-        theImageView.layer.cornerRadius = 15
-        theImageView.layer.borderColor = UIColor.red.cgColor
-        theImageView.layer.borderWidth = 5
+
+        
+        
         
         
         let start = Date().timeIntervalSince1970
@@ -37,6 +37,25 @@ class ViewController: UIViewController {
         }
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated )
+        
+        theImageView.clipsToBounds = true
+        theImageView.layer.cornerRadius = theImageView.frame.size.height / 2
+        theImageView.layer.borderColor = UIColor.red.cgColor
+        theImageView.layer.borderWidth = 1
+        
+        contaner.layer.cornerRadius = theImageView.frame.size.height / 2
+        contaner.layer.borderColor = UIColor.red.cgColor
+        contaner.layer.borderWidth = 1
+        
+        contaner.clipsToBounds = false
+        contaner.layer.shadowRadius = 20
+        contaner.layer.shadowColor = UIColor.green.cgColor
+        contaner.layer.shadowOffset = CGSize(width: 10, height: 10)
+        contaner.layer.shadowOpacity = 0.6
+    }
 
 }
 

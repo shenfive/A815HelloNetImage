@@ -16,30 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-lb-IYb">
-                                <rect key="frame" x="10" y="152.5" width="394" height="591"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krv-Lw-nJq">
+                                <rect key="frame" x="10" y="251" width="394" height="394"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-lb-IYb">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="394"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ynf-lb-IYb" secondAttribute="height" multiplier="1:1.5" id="Clu-gO-zqE"/>
+                                    <constraint firstItem="ynf-lb-IYb" firstAttribute="top" secondItem="krv-Lw-nJq" secondAttribute="top" id="J28-sl-t4B"/>
+                                    <constraint firstAttribute="width" secondItem="krv-Lw-nJq" secondAttribute="height" multiplier="1:1" id="QZf-X3-jZ6"/>
+                                    <constraint firstItem="ynf-lb-IYb" firstAttribute="leading" secondItem="krv-Lw-nJq" secondAttribute="leading" id="Qc9-h9-ngO"/>
+                                    <constraint firstAttribute="bottom" secondItem="ynf-lb-IYb" secondAttribute="bottom" id="aL8-mG-bzV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ynf-lb-IYb" secondAttribute="trailing" id="sqn-il-SuT"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ynf-lb-IYb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cee-k5-CkT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ynf-lb-IYb" secondAttribute="trailing" constant="10" id="Zfy-de-7BQ"/>
-                            <constraint firstItem="ynf-lb-IYb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qFu-cW-1iD"/>
-                            <constraint firstItem="ynf-lb-IYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xQw-t1-9VX"/>
+                            <constraint firstItem="krv-Lw-nJq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7aF-DZ-Al4"/>
+                            <constraint firstItem="krv-Lw-nJq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lwb-rm-JCB"/>
+                            <constraint firstItem="krv-Lw-nJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="S8e-15-HQC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="krv-Lw-nJq" secondAttribute="trailing" constant="10" id="SXv-tz-z8P"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="contaner" destination="krv-Lw-nJq" id="eof-DI-aNY"/>
                         <outlet property="theImageView" destination="ynf-lb-IYb" id="f5I-tv-ReX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13" y="54"/>
+            <point key="canvasLocation" x="-13.043478260869566" y="53.571428571428569"/>
         </scene>
     </scenes>
     <resources>
