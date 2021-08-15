@@ -12,6 +12,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var theImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        theImageView.clipsToBounds = true
+        theImageView.layer.cornerRadius = 15
+        theImageView.layer.borderColor = UIColor.red.cgColor
+        theImageView.layer.borderWidth = 5
+        
+        
         let start = Date().timeIntervalSince1970
         let imageAddress = "https://shop.r10s.jp/aikimania/cabinet/new/sw-1758_sp.jpg"
         if let imageURL = URL(string: imageAddress){
@@ -29,7 +36,7 @@ class ViewController: UIViewController {
             print("next:\(Date().timeIntervalSince1970 - start)")
         }
     }
-    
+
 
 }
 
