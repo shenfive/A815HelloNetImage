@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30CCED91D568621C6AC1E804 /* Pods_A815HelloNetImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A4451E958A38AFE361EC74 /* Pods_A815HelloNetImage.framework */; };
 		BA291A2A26C8DE6100FB0304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA291A2926C8DE6100FB0304 /* AppDelegate.swift */; };
 		BA291A2C26C8DE6100FB0304 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA291A2B26C8DE6100FB0304 /* SceneDelegate.swift */; };
 		BA291A2E26C8DE6100FB0304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA291A2D26C8DE6100FB0304 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DB16AE014679AC5C218796B /* Pods-A815HelloNetImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A815HelloNetImage.release.xcconfig"; path = "Target Support Files/Pods-A815HelloNetImage/Pods-A815HelloNetImage.release.xcconfig"; sourceTree = "<group>"; };
+		B1A4451E958A38AFE361EC74 /* Pods_A815HelloNetImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A815HelloNetImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA291A2626C8DE6100FB0304 /* A815HelloNetImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A815HelloNetImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA291A2926C8DE6100FB0304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA291A2B26C8DE6100FB0304 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BA291A3226C8DE6200FB0304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA291A3526C8DE6200FB0304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA291A3726C8DE6200FB0304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C047E64BFDA99062095E9FAE /* Pods-A815HelloNetImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A815HelloNetImage.debug.xcconfig"; path = "Target Support Files/Pods-A815HelloNetImage/Pods-A815HelloNetImage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CCED91D568621C6AC1E804 /* Pods_A815HelloNetImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A8B6E0C22B2B80B870FF2FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C047E64BFDA99062095E9FAE /* Pods-A815HelloNetImage.debug.xcconfig */,
+				2DB16AE014679AC5C218796B /* Pods-A815HelloNetImage.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A8E45F72E754F0E3A83DF2F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A4451E958A38AFE361EC74 /* Pods_A815HelloNetImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA291A1D26C8DE6100FB0304 = {
 			isa = PBXGroup;
 			children = (
 				BA291A2826C8DE6100FB0304 /* A815HelloNetImage */,
 				BA291A2726C8DE6100FB0304 /* Products */,
+				1A8B6E0C22B2B80B870FF2FC /* Pods */,
+				A8E45F72E754F0E3A83DF2F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA291A3A26C8DE6200FB0304 /* Build configuration list for PBXNativeTarget "A815HelloNetImage" */;
 			buildPhases = (
+				5DAF48BBE2A2C877986DA2DC /* [CP] Check Pods Manifest.lock */,
 				BA291A2226C8DE6100FB0304 /* Sources */,
 				BA291A2326C8DE6100FB0304 /* Frameworks */,
 				BA291A2426C8DE6100FB0304 /* Resources */,
+				CAEB5E6DB55DC3A16057228B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DAF48BBE2A2C877986DA2DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-A815HelloNetImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAEB5E6DB55DC3A16057228B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-A815HelloNetImage/Pods-A815HelloNetImage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-A815HelloNetImage/Pods-A815HelloNetImage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-A815HelloNetImage/Pods-A815HelloNetImage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA291A2226C8DE6100FB0304 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		BA291A3B26C8DE6200FB0304 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C047E64BFDA99062095E9FAE /* Pods-A815HelloNetImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		BA291A3C26C8DE6200FB0304 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB16AE014679AC5C218796B /* Pods-A815HelloNetImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
