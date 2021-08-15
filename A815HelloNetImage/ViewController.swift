@@ -14,11 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let imageAddress = "https://shop.r10s.jp/aikimania/cabinet/new/sw-1758_sp.jpg"
         if let imageURL = URL(string: imageAddress){
-            do{
-                let imageData = try Data(contentsOf: imageURL)
-                theImageView.image = UIImage(data: imageData)
-            }catch{
-                print(error.localizedDescription)
+            DispatchQueue.global().async {
+                do{
+                    let imageData = try Data(contentsOf: imageURL)
+                    DispatchQueue.main.async {
+                        self.theImageView.image = UIImage(data: imageData)
+                    }
+                }catch{
+                    print(error.localizedDescription)
+                }
             }
         }
     }
